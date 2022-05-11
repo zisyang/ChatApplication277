@@ -9,11 +9,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
-        android:layout_above="@+id/linearlayout"
-        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       />
+        android:layout_above="@+id/linearlayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp" />
 
     <LinearLayout
         android:id="@+id/linearlayout"
@@ -24,21 +25,27 @@
         android:layout_marginBottom="5dp"
         android:weightSum="100"/>
 
-        <EditText
-            android:id="@+id/messageBox"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:hint="Type a message"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="10dp"
-            android:background="@drawable/message_box_background"
-            android:layout_weight="85"/>
+    <EditText
+        android:id="@+id/messageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="370dp"
+        android:layout_weight="85"
+        android:background="@drawable/message_box_background"
+        android:hint="Type a message" />
 
-        <ImageView
-            android:id="@+id/sentButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/send"
-            android:layout_weight="20"/>
+    <ImageView
+        android:id="@+id/sentButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="97dp"
+        android:layout_weight="20"
+        android:src="@drawable/send" />
 
 </RelativeLayout>
