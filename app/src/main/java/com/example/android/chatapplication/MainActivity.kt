@@ -3,6 +3,7 @@ package com.example.android.chatapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,10 +46,9 @@ class MainActivity : AppCompatActivity() {
                         userList.add(currentUser!!)
                     }
 
-
-
                 }
-                adapter.notifyDataSetChanged()
+
+                adapter.notifyDataSetChanged();
 
             }
 

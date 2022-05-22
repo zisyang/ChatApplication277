@@ -12,11 +12,16 @@
 
     <TextView
         android:id="@+id/txt_sent_message"
-        android:layout_width="wrap_content"
+        android:layout_width="201dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/message_box_background"
         android:padding="10dp"
         android:text="This is sent message"
         android:textColor="@color/black"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
 </RelativeLayout>

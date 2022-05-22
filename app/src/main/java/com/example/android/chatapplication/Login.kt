@@ -34,11 +34,20 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //set for testing
+        edtemail.setText("zi11@gm.com");
+        edtPassword.setText("zi1111");
+
         btnLogin.setOnClickListener {
             val email = edtemail.text.toString()
             val password = edtPassword.text.toString()
 
-            login(email,password);
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this@Login, "email or password cannot be empty", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                login(email,password);
+            }
         }
 
     }
